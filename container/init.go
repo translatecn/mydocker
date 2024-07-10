@@ -2,7 +2,7 @@ package container
 
 import (
 	"fmt"
-	log "github.com/Sirupsen/logrus"
+	log "github.com/sirupsen/logrus"
 	"io/ioutil"
 	"os"
 	"os/exec"
@@ -43,7 +43,8 @@ func readUserCommand() []string {
 	return strings.Split(msgStr, " ")
 }
 
-/**
+/*
+*
 Init 挂载点
 */
 func setUpMount() {
